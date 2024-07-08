@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    font: bolder;
+    color: black;
+    font-weight: 700;
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 11.5px 9.7px 10px rgba(0, 0, 0, 1);
+    overflow: hidden;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('WhatsApp Image 2024-07-03 at 20.02.44_f6064d7b.jpg') no-repeat center center;
+    background-size: 800px;
+    filter: blur(10px); 
+    z-index: -99; 
+    opacity: 0.8; 
+    border-radius: 8px; 
+}
+
+h1, h2 {
+    color: #0b0b0b;
+    text-align: center;
+    z-index: -99; 
+    font: bolder;  
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    z-index: -99;
+    font: bolder;
+}
+
+ul li {
+    padding-left: 30px;
+    margin: 10px 0;
+    color: #2c2b2b;
+    z-index: -99;
+    font: bolder;
+}
+
+.header-image {
+    width: 25%;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: -70px;
+    border-radius: 40px;
+    z-index: -70;
+}
+
+.indie {
+    display: flex;
+    align-items: flex-start;
+}
+
+.indie ul {
+    list-style-type: none;
+    flex: -20;
+    z-index: 99;
+}
+
+.trend {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-image {
+    width: 19%;
+    height: auto;
+    flex-shrink: 0;
+    margin-left: 90px;
+    border-radius: 40px;
+    z-index: -70;
+}
